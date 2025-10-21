@@ -14,7 +14,7 @@ This plugin has been fully upgraded to support Capacitor 7, with updated Paystac
 **Key Updates:**
 - ✅ Capacitor 7.4.3 support
 - ✅ iOS Paystack SDK 3.0.15
-- ✅ Android Paystack SDK 3.3.2
+- ✅ Android Paystack SDK 3.1.3
 - ✅ Modern TypeScript & build pipeline
 - ✅ Improved type definitions and documentation
 

@@ -8,7 +8,7 @@ Version 2.0 is a major update that includes:
 
 - **Capacitor upgrade**: From v2.1.0 to v7.4.3
 - **iOS Paystack SDK**: Updated from v3.0.13 to v3.0.15
-- **Android Paystack SDK**: Updated from v3.0.17 to v3.3.2
+- **Android Paystack SDK**: Updated from v3.0.17 to v3.1.3
 - **Modern build system**: Updated TypeScript, Gradle, and iOS build tools
 - **API changes**: Updated to use Capacitor 7's new plugin registration API
 
