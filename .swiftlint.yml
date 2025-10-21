@@ -1,0 +1,9 @@
+disabled_rules:
+  - identifier_name
+  - line_length
+  - type_name
+opt_in_rules:
+  - empty_count
+excluded:
+  - ios/Pods
+  - ios/paystack-ios-3.0.13

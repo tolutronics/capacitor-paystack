@@ -1,0 +1,85 @@
+{
+  "name": "@tolutronics/capacitor-paystack",
+  "version": "2.0.0",
+  "description": "Paystack capacitor plugin for Android and iOS. Forked from capacitor-paystack by Fidele Software Solutions and upgraded to Capacitor 7.",
+  "type": "module",
+  "main": "dist/plugin.cjs.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "unpkg": "dist/plugin.js",
+  "scripts": {
+    "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
+    "verify:ios": "cd ios && pod install && xcodebuild -workspace Plugin.xcworkspace -scheme Plugin -destination generic/platform=iOS && cd ..",
+    "verify:android": "cd android && ./gradlew clean build test && cd ..",
+    "verify:web": "npm run build",
+    "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
+    "clean": "rimraf ./dist",
+    "watch": "tsc --watch",
+    "docgen": "docgen --api PaystackCapacitorPlugin --output-readme README.md --output-json dist/docs.json",
+    "prepublishOnly": "npm run build",
+    "lint": "npm run eslint && npm run prettier -- --check && npm run swiftlint -- lint",
+    "fmt": "npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- --fix --format",
+    "eslint": "eslint . --ext ts",
+    "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
+    "swiftlint": "node-swiftlint"
+  },
+  "author": "Tolulope Adeniyi",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.4.3",
+    "@capacitor/cli": "^7.4.3",
+    "@capacitor/docgen": "^0.2.2",
+    "@capacitor/ios": "^7.4.3",
+    "@ionic/eslint-config": "^0.4.0",
+    "@ionic/prettier-config": "^4.0.0",
+    "@ionic/swiftlint-config": "^1.1.2",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "eslint": "^8.57.0",
+    "prettier": "~3.3.3",
+    "prettier-plugin-java": "^2.6.4",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.24.0",
+    "swiftlint": "^1.0.2",
+    "typescript": "~5.6.3"
+  },
+  "files": [
+    "android/build.gradle",
+    "android/gradle.properties",
+    "android/src/",
+    "dist/",
+    "ios/Plugin/",
+    "ios/Plugin.xcodeproj/",
+    "TolutronicsCapacitorPaystack.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native",
+    "paystack",
+    "payment",
+    "mobile-payments"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tolutronics/capacitor-paystack"
+  },
+  "bugs": {
+    "url": "https://github.com/tolutronics/capacitor-paystack/issues"
+  },
+  "prettier": "@ionic/prettier-config",
+  "swiftlint": "@ionic/swiftlint-config",
+  "eslintConfig": {
+    "extends": "@ionic/eslint-config/recommended"
+  }
+}

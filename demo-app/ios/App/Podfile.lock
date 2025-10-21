@@ -1,0 +1,37 @@
+PODS:
+  - Capacitor (7.4.3):
+    - CapacitorCordova
+  - CapacitorCordova (7.4.3)
+  - Paystack (3.0.17):
+    - Paystack/Core (= 3.0.17)
+  - Paystack/Core (3.0.17)
+  - TolutronicsCapacitorPaystack (2.0.0):
+    - Capacitor
+    - Paystack (~> 3.0.15)
+
+DEPENDENCIES:
+  - "Capacitor (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
+  - TolutronicsCapacitorPaystack (from `../../..`)
+
+SPEC REPOS:
+  trunk:
+    - Paystack
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../../node_modules/@capacitor/ios"
+  CapacitorCordova:
+    :path: "../../node_modules/@capacitor/ios"
+  TolutronicsCapacitorPaystack:
+    :path: "../../.."
+
+SPEC CHECKSUMS:
+  Capacitor: 28d6c01026a9a3f7156529498ec1f389a2a28dbc
+  CapacitorCordova: 435121e81a2df4d0034f0fb11fcefab5104cfdb5
+  Paystack: 5a7a9d5c47ddfd76e3d84550d9ff1f49bf6d284c
+  TolutronicsCapacitorPaystack: 1ef7174a8f6d9a29be4b35b6f6ee9b042bea79bf
+
+PODFILE CHECKSUM: bb78ff4cf81be9b49bc174a855d749aaa93c2d64
+
+COCOAPODS: 1.16.2

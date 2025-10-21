@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build outputs
+dist/
+/android/build/
+/android/.gradle/
+/ios/Plugin.xcworkspace/xcuserdata/
+/ios/Pods/
+
+# Misc
+.npmrc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.env
+.env.local
+.env.*.local
+UPGRADE_SUMMARY.md
