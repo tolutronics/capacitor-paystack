@@ -13,10 +13,7 @@ import type {
   AccessCodeOptions,
 } from './definitions';
 
-export class PaystackCapacitorWeb
-  extends WebPlugin
-  implements PaystackCapacitorPlugin
-{
+export class PaystackCapacitorWeb extends WebPlugin implements PaystackCapacitorPlugin {
   async initialize(options: InitializeOptions): Promise<InitializeResult> {
     console.log('PaystackCapacitor Web: initialize', options);
     throw this.unimplemented('Web implementation not available. Paystack requires native implementation.');
@@ -37,9 +34,7 @@ export class PaystackCapacitorWeb
     throw this.unimplemented('Web implementation not available. Paystack requires native implementation.');
   }
 
-  async addChargeParameters(parameters: {
-    [key: string]: string;
-  }): Promise<void> {
+  async addChargeParameters(parameters: { [key: string]: string }): Promise<void> {
     console.log('PaystackCapacitor Web: addChargeParameters', parameters);
     throw this.unimplemented('Web implementation not available. Paystack requires native implementation.');
   }
@@ -54,9 +49,7 @@ export class PaystackCapacitorWeb
     throw this.unimplemented('Web implementation not available. Paystack requires native implementation.');
   }
 
-  async putChargeCustomFields(customFields: {
-    [key: string]: string;
-  }): Promise<void> {
+  async putChargeCustomFields(customFields: { [key: string]: string }): Promise<void> {
     console.log('PaystackCapacitor Web: putChargeCustomFields', customFields);
     throw this.unimplemented('Web implementation not available. Paystack requires native implementation.');
   }

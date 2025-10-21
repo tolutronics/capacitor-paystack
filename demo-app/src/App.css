@@ -210,7 +210,7 @@ button:disabled {
 }
 
 .info-card li::before {
-  content: "•";
+  content: '•';
   position: absolute;
   left: 0;
   color: #f59e0b;

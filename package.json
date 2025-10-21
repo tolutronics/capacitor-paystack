@@ -1,7 +1,7 @@
 {
   "name": "@tolutronics/capacitor-paystack",
-  "version": "2.0.0",
-  "description": "Paystack capacitor plugin for Android and iOS. Forked from capacitor-paystack by Fidele Software Solutions and upgraded to Capacitor 7.",
+  "version": "2.0.1",
+  "description": "Paystack capacitor plugin for Android and iOS. Compatible with Capacitor 7.",
   "type": "module",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -52,7 +52,11 @@
     "dist/",
     "ios/Plugin/",
     "ios/Plugin.xcodeproj/",
-    "TolutronicsCapacitorPaystack.podspec"
+    "TolutronicsCapacitorPaystack.podspec",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+    "MIGRATION.md"
   ],
   "keywords": [
     "capacitor",
